@@ -53,6 +53,7 @@ fun MyCalculator(
 
         val listOfOperatorOrNumbers =
             listOf(
+                "Nightmareulator",
                 "0",
                 "1",
                 "2",
@@ -86,6 +87,11 @@ fun MyCalculator(
             items(items = listOfOperatorOrNumbers, itemContent = { operatorOrNumber ->
 
                 when (operatorOrNumber) {
+
+                    "Nightmareulator" -> {
+                        Text(text = operatorOrNumber, style = MaterialTheme.typography.caption)
+                    }
+
                     "." -> {
                         ClickableText(
                             text = AnnotatedString(operatorOrNumber),

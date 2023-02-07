@@ -1,6 +1,8 @@
 package com.example.hellocalculatorlia.ui.theme
 
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Typography
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -21,34 +23,32 @@ val Typography = Typography(
         fontWeight = FontWeight.Normal,
         fontSize = 250.sp,
         lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
+        letterSpacing = 0.5.sp,
+        color = HotPink
     ),
 
     h2 = TextStyle(
         fontFamily = ComicSans,
         fontWeight = FontWeight.Normal,
         fontSize = 100.sp,
+        color = LimeGreen
 
         ),
     h3 = TextStyle(
         fontFamily = ComicSans,
         fontWeight = FontWeight.Normal,
-        fontSize = 30.sp
-    )
-    /* Other default text styles to override
-    titleLarge = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontSize = 30.sp,
+        color = LimeGreen
+    ) ,
+
+    caption = TextStyle(
+        fontFamily = ComicSans,
         fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
-    ),
-    labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
-        letterSpacing = 0.5.sp
+        fontSize = 50.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp,
+        color = HotPink
     )
-    */
+
+
 )
