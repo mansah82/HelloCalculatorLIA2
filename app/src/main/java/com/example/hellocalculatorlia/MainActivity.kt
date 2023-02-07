@@ -30,7 +30,6 @@ class MainActivity : ComponentActivity() {
                 MyCalculator(
                     number1 = viewModel.number1,
                     number2 = viewModel.number2,
-                    decimal = viewModel.decimal,
                     operator = viewModel.operator,
                     result = viewModel.result,
                     onAction = viewModel::onAction
@@ -41,13 +40,10 @@ class MainActivity : ComponentActivity() {
 }
 
 
-
-
 @Composable
 fun MyCalculator(
     number1: String,
     number2: String,
-    decimal: String,
     operator: String,
     result: String,
     onAction: (CalculatorAction) -> Unit
@@ -191,5 +187,5 @@ fun MyCalculator(
 
         }
     }
-    }
+}
 
