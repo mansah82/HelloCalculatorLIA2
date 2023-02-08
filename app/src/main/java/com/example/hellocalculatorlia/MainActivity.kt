@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.example.hellocalculatorlia.data.CalculatorAction
 import com.example.hellocalculatorlia.ui.theme.HelloCalculatorLIATheme
 import com.example.hellocalculatorlia.viewmodels.CalculatorViewModel
+import com.example.hellocalculatorlia.data.listOfNumberAndOperators
 
 
 class MainActivity : ComponentActivity() {
@@ -48,31 +49,8 @@ fun MyCalculator(
     result: String,
     onAction: (CalculatorAction) -> Unit
 ) {
+
     Column {
-
-
-        val listOfOperatorOrNumbers =
-            listOf(
-                "Nightmareulator",
-                "0",
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7",
-                "8",
-                "9",
-                ".",
-                "+",
-                "-",
-                "*",
-                "÷",
-                "=",
-                "AC"
-            )
-
 
         LazyColumn(
 
@@ -84,7 +62,7 @@ fun MyCalculator(
 
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            items(items = listOfOperatorOrNumbers, itemContent = { operatorOrNumber ->
+            items(items = listOfNumberAndOperators, itemContent = { operatorOrNumber ->
 
                 when (operatorOrNumber) {
 
