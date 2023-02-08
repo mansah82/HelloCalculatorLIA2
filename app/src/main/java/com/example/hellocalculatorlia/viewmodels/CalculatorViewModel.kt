@@ -51,7 +51,6 @@ class CalculatorViewModel : ViewModel() {
     private fun enterDecimal() {
         if (number1.endsWith(".") || number2.endsWith(".")) return
 
-
         else if (operator.isBlank()) {
             if(number1.contains(".")) return
             number1 += "."
