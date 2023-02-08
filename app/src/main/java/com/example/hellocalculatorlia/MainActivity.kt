@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.example.hellocalculatorlia.ui.theme.HelloCalculatorLIATheme
 import com.example.hellocalculatorlia.viewmodels.CalculatorViewModel
+import com.example.hellocalculatorlia.data.listOfNumberAndOperators
 
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +26,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-
-
-

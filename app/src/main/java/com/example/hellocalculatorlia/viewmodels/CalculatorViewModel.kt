@@ -54,11 +54,14 @@ class CalculatorViewModel : ViewModel() {
         else if (operator.isBlank()) {
 
             if (number1.contains(".")) return
+
             number1 += "."
 
         } else {
 
+
             if (number2.contains(".")) return
+
             number2 += "."
         }
     }
