@@ -47,16 +47,14 @@ fun MyCalculator(
                     }
 
                     "." -> {
-                        ClickableText(
-                            text = AnnotatedString(operatorOrNumber),
+                        ClickableText(text = AnnotatedString(operatorOrNumber),
                             style = MaterialTheme.typography.h1,
                             onClick = { onAction(CalculatorAction.Decimal) })
                     }
 
 
                     "+" -> {
-                        ClickableText(
-                            text = AnnotatedString(operatorOrNumber),
+                        ClickableText(text = AnnotatedString(operatorOrNumber),
                             style = MaterialTheme.typography.h1,
                             onClick = { onAction(CalculatorAction.Operation("+")) })
 
@@ -64,8 +62,7 @@ fun MyCalculator(
                     }
 
                     "-" -> {
-                        ClickableText(
-                            text = AnnotatedString(operatorOrNumber),
+                        ClickableText(text = AnnotatedString(operatorOrNumber),
                             style = MaterialTheme.typography.h1,
                             onClick = { onAction(CalculatorAction.Operation("-")) })
 
@@ -73,16 +70,14 @@ fun MyCalculator(
                     }
 
                     "÷" -> {
-                        ClickableText(
-                            text = AnnotatedString(operatorOrNumber),
+                        ClickableText(text = AnnotatedString(operatorOrNumber),
                             style = MaterialTheme.typography.h1,
                             onClick = { onAction(CalculatorAction.Operation("÷")) })
 
 
                     }
                     "*" -> {
-                        ClickableText(
-                            text = AnnotatedString(operatorOrNumber),
+                        ClickableText(text = AnnotatedString(operatorOrNumber),
                             style = MaterialTheme.typography.h1,
                             onClick = { onAction(CalculatorAction.Operation("*")) })
 
@@ -91,8 +86,7 @@ fun MyCalculator(
 
 
                     "=" -> {
-                        ClickableText(
-                            text = AnnotatedString(operatorOrNumber),
+                        ClickableText(text = AnnotatedString(operatorOrNumber),
                             style = MaterialTheme.typography.h1,
                             onClick = { onAction(CalculatorAction.Calculate) })
 
@@ -100,8 +94,7 @@ fun MyCalculator(
                     }
 
                     "AC" -> {
-                        ClickableText(
-                            text = AnnotatedString(operatorOrNumber),
+                        ClickableText(text = AnnotatedString(operatorOrNumber),
                             style = MaterialTheme.typography.h1,
                             onClick = { onAction(CalculatorAction.Clear) })
 
@@ -109,11 +102,9 @@ fun MyCalculator(
 
 
                     else -> {
-                        ClickableText(
-                            text = AnnotatedString(operatorOrNumber),
+                        ClickableText(text = AnnotatedString(operatorOrNumber),
                             style = MaterialTheme.typography.h1,
-                            onClick = { onAction(CalculatorAction.Number(operatorOrNumber.toInt())) }
-                        )
+                            onClick = { onAction(CalculatorAction.Number(operatorOrNumber.toInt())) })
 
 
                     }

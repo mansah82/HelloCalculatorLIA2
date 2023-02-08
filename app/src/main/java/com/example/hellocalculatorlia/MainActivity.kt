@@ -7,7 +7,6 @@ import com.example.hellocalculatorlia.ui.theme.HelloCalculatorLIATheme
 import com.example.hellocalculatorlia.viewmodels.CalculatorViewModel
 
 
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
